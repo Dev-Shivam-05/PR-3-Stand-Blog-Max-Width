@@ -1,0 +1,118 @@
+:root
+{
+    --theme-heading: #CC9900;
+    --theme-old-yellow: #7D611F;
+    --theme-text: #666666;
+    --theme-grey: #CCCCCC;
+    --theme-white: #fffffff3;
+    --theme-black: #0e0e0e;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body
+{
+    font-family: 'Open Sans';
+}
+.container
+{
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a
+{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+img
+{
+    display: block;
+    width: 100%;
+}
+ul li
+{
+    list-style: none;
+}
+
+/* Properties Classes Starts */
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex
+{
+    display: flex;
+}
+.justify-content-center
+{
+    justify-content: center;
+}
+.justify-content-space-between
+{
+    justify-content: space-between;
+}
+.align-items-center
+{
+    align-items: center;
+}
+.col-4
+{
+    width: 33.33%;
+}
+.col-6
+{
+    width: 50%;
+}
+.col-12
+{
+    width: 100%;
+}
+/* Properties Classes Ends*/
+
+/* Classes And Id's Section Starts */
+header 
+{
+    padding: 2rem 0;
+}
+header .navbar .logo
+{
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--theme-heading);
+}
+header .navbar nav .navlinks li a
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--theme-black);
+    padding: 1rem 2rem;
+    margin: 0 5px;
+    transition: all .3s ease;
+}
+header .navbar nav .navlinks li:first-child a
+{
+    background-color: var(--theme-heading);
+    color: var(--theme-white);
+    border-radius: 8px;
+}
+header .navbar nav .navlinks li a:hover
+{
+    background-color: var(--theme-heading);
+    color: var(--theme-white);
+    border-radius: 8px;
+}
+header .navbar .toggler
+{
+    padding: .5rem 1rem;
+    background-color: var(--theme-grey);
+    border: none;
+    text-align: center;
+    display: none;
+}
+/* Classes And Id's Section Ends */
