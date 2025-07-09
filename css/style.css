@@ -1,6 +1,7 @@
 :root
 {
     --theme-heading: #CC9900;
+    --theme-heading-hover: #b28704;
     --theme-old-yellow: #7D611F;
     --theme-text: #666666;
     --theme-grey: #CCCCCC;
@@ -25,7 +26,7 @@ html body
 }
 a
 {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -61,21 +62,60 @@ ul li
 {
     align-items: center;
 }
+.col-3
+{
+    width: 25%;
+    padding: 15px;
+}
 .col-4
 {
     width: 33.33%;
+    padding: 15px;
 }
 .col-6
 {
     width: 50%;
+    padding: 15px;
 }
 .col-12
 {
     width: 100%;
+    padding: 15px;
 }
+
+/* Margin Classes Starts */
+.mtb-1
+{
+    margin: 1rem 0;
+}
+.mt-4
+{
+    margin-top: 4rem;
+}
+/* Margin Classes End */
+
 /* Properties Classes Ends*/
 
 /* Classes And Id's Section Starts */
+
+/* button Section Stars */
+.btn
+{
+    color: var(--theme-white);
+    font-weight: 300;
+    background-color: var(--theme-heading);
+    padding: .7rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.btn:hover
+{
+    background-color: var(--theme-heading-hover);
+}
+/* button Section Ends */
+
+/* Header Section Starts */
 header 
 {
     padding: 2rem 0;
@@ -115,4 +155,91 @@ header .navbar .toggler
     text-align: center;
     display: none;
 }
+/* Header Section Ends */
+
+/* Hero's Section Starts */.hero
+{
+    height: 600px;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Hero's Section Ends */
+
+/* Introduction Section Starts */
+.introduction .introduction-heading
+{
+   text-align: center;
+}
+.introduction .introduction-heading h3
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--theme-heading);
+}
+.introduction .introduction-heading p
+{
+    margin: 2rem 0;
+    font-weight: 400;
+    color: var(--theme-text);
+    line-height: 2;
+}
+
+/* Introduction Card Section Starts */
+
+/* Introduction Card Section End */
+.introduction .card 
+{
+    margin: 0 10px;
+}
+.introduction .card .card-img img
+{
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+.introduction .card .card-body h3
+{
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--theme-heading);
+    word-spacing: 3px;
+}
+.introduction .card .card-body p
+{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--theme-text);
+    line-height: 2;
+}
+/* Introduction Section Ends */
+
+/* Blog Section Starts */
+.blog .col-6 article h2
+{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--theme-heading);
+}
+.blog .col-6 article p
+{
+    margin: 1.3rem 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--theme-text);
+    line-height: 2;
+}
+.blog .col-6 .col-3 article ul li
+{
+    
+}
+.blog .col-6 article ul li a
+{
+    color: rgb(63, 63, 141);
+    text-decoration: underline;
+}
+/* Blog Section Ends */
+
+
 /* Classes And Id's Section Ends */
