@@ -1,0 +1,48 @@
+/* XXl */
+@media screen and (min-width: 1399px)
+{
+    .container
+    {
+        max-width: 1320px;
+    }
+}
+/* Xl */
+@media screen and (max-width: 1399px)
+{
+    .container
+    {
+        max-width: 1140px;
+    }
+}
+/* L */
+@media screen and (max-width: 1199px)
+{
+    .container
+    {
+        max-width: 960px;
+    }
+}
+/* M */
+@media screen and (max-width: 991px)
+{
+    .container
+    {
+        max-width: 720px;
+    }
+}
+/* S */
+@media screen and (max-width: 767px)
+{
+    .container
+    {
+        max-width: 540px;
+    }
+}
+/* XS */
+@media screen and (max-width: 578px)
+{
+    .container
+    {
+        max-width: 100%;
+    }
+}

@@ -4,9 +4,11 @@
     --theme-heading-hover: #b28704;
     --theme-old-yellow: #7D611F;
     --theme-text: #666666;
+    --theme-hover-text: #454444;
     --theme-grey: #CCCCCC;
     --theme-white: #fffffff3;
     --theme-black: #0e0e0e;
+    --theme-blue: #014c8c;
 }
 *
 {
@@ -72,10 +74,23 @@ ul li
     width: 33.33%;
     padding: 15px;
 }
+.col-5
+{
+    width: 41.65%;
+    padding: 15px;
+}
 .col-6
 {
     width: 50%;
     padding: 15px;
+}
+.col-7
+{
+    width: 58.31%;
+}
+.col-8
+{
+    width: 66.66%;
 }
 .col-12
 {
@@ -91,6 +106,14 @@ ul li
 .mt-4
 {
     margin-top: 4rem;
+}
+.my-1
+{
+    margin: 1.5rem 0;
+}
+.pt-0
+{
+    padding-top: 0;
 }
 /* Margin Classes End */
 
@@ -125,6 +148,11 @@ header .navbar .logo
     font-size: 36px;
     font-weight: 400;
     color: var(--theme-heading);
+    transition: all .3s ease;
+}
+header .navbar .logo:hover
+{
+    color: var(--theme-blue);
 }
 header .navbar nav .navlinks li a
 {
@@ -157,7 +185,8 @@ header .navbar .toggler
 }
 /* Header Section Ends */
 
-/* Hero's Section Starts */.hero
+/* Hero's Section Starts */
+.hero
 {
     height: 600px;
     background-image: url(../images/hero-bg.jpg);
@@ -209,20 +238,28 @@ header .navbar .toggler
 .introduction .card .card-body p
 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--theme-text);
     line-height: 2;
 }
 /* Introduction Section Ends */
 
 /* Blog Section Starts */
-.blog .col-6 article h2
+.blog
+{
+    margin-top: 80px;
+}
+.blog .col-6 article h2,
+.blog .col-6 .categories h2,
+.blog .col-12 h2,
+footer .col-6 .footer-box-2 h2
 {
     font-size: 24px;
     font-weight: 400;
     color: var(--theme-heading);
 }
-.blog .col-6 article p
+.blog .col-6 article p,
+.blog .col-6 .categories p
 {
     margin: 1.3rem 0;
     font-size: 18px;
@@ -230,16 +267,138 @@ header .navbar .toggler
     color: var(--theme-text);
     line-height: 2;
 }
-.blog .col-6 .col-3 article ul li
+.blog .categories ul
 {
-    
+    margin-top: 2rem;
 }
-.blog .col-6 article ul li a
+.blog .col-6 .categories ul li a
 {
     color: #3f3f8d;
     text-decoration: underline;
+    margin-top: 1rem;
+    transition: all .4s ease;
+}
+.blog .col-6 .categories ul li a:hover
+{
+    text-decoration: none;
+}
+.blog .col-5 img
+{
+    object-fit: cover;
+    object-position: top;
+}
+.blog .col-7
+{
+    padding: 0 1rem;
+}
+.blog .post-body 
+{
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--theme-grey);
+}
+.blog .post-body h4
+{
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--theme-heading);
+    margin-bottom: .7rem;
+}
+.blog .post-body p
+{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--theme-text);
 }
 /* Blog Section Ends */
 
+/* Footer Starts */
+footer
+{
+    background-image: url(../images/footer-bg-image.png);
+}
+footer .col-6 h2,
+footer .col-6 .footer-box-3 h2
+{
+    color: var(--theme-heading);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+footer .col-6 .box-1-body
+{
+    padding: 1.5rem;
+    background-color: var(--theme-grey);
+    font-weight: 300;
+} 
+footer .col-6 .box-1-body p
+{
+    margin-bottom: 10px;
+    line-height: 1.9;
+    font-size: 14px;
+}
+footer .col-6 .box-1-body h4
+{
+    margin: 20px 0;
+}
+footer .col-6 .footer-box-2 ul li 
+{
+    margin: 10px 0;
+}
+footer .col-6 .footer-box-2
+{
+    padding: 0 10px;
+}
+footer .col-6 .footer-box-2 ul li a
+{
+    color: var(--theme-heading);
+    text-decoration: underline;
+    margin-top: 1rem;
+    transition: all .4s ease;
+}
+footer .col-6 .footer-box-2 ul li a:hover
+{
+    text-decoration: none;
+}
+footer .col-6 .footer-box-3 p
+{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--theme-grey);
+    color: var(--theme-grey);
+}
+footer .col-6 .footer-box-3 .last-p
+{
+    border-bottom: none;
+}
+footer .footer-box-4-body .images-line-1,
+footer .footer-box-4-body .images-line-2
+{
+    display: flex;
+}
+footer .footer-box-4-body img 
+{
+    width: 100px;
+    height: 100px;
+    margin: 0 5px 5px 0;
+}
+footer .col-6 .footer-box-4 p
+{
+    color: var(--theme-grey);
+    margin: 20px 0;
+}
+footer .btn
+{
+    background-color: var(--theme-text);
+    transition: all .4s ease;
+}
+footer .btn:hover
+{
+    background-color: var(--theme-hover-text);
+}
+footer .copyright p
+{
+    color: var(--theme-grey);
+}
+/* Footer End */
 
 /* Classes And Id's Section Ends */
