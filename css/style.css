@@ -169,7 +169,7 @@ header .navbar nav .navlinks li:first-child a
     color: var(--theme-white);
     border-radius: 8px;
 }
-header .navbar nav .navlinks li:hover
+header .navbar nav .navlinks li a:hover
 {
     background-color: var(--theme-heading);
     color: var(--theme-white);
