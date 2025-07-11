@@ -1,10 +1,20 @@
 /* XXl */
-@media screen and (min-width: 1399px)
+@media screen and (min-width: 1400px)
 {
     .container
     {
         max-width: 1320px;
     }
+    /* Properties Classes Starts */
+    .col-xxl-6
+    {
+        width: 50%;
+    }
+    .col-xxl-12
+    {
+        width: 100%;
+    }
+    /* Properties Classes Ends */
 }
 /* Xl */
 @media screen and (max-width: 1399px)
@@ -13,6 +23,16 @@
     {
         max-width: 1140px;
     }
+    /* Properties Classes Starts */
+    .col-xl-6
+    {
+        width: 50%;
+    }
+    .col-xl-12
+    {
+        width: 100%;
+    }
+    /* Properties Classes Ends */
 }
 /* L */
 @media screen and (max-width: 1199px)
@@ -21,7 +41,54 @@
     {
         max-width: 960px;
     }
+    /* Properties Classes Starts */
+    .col-lg-4
+    {
+        width: 33.33%;
+    }
+    .col-lg-6
+    {
+        width: 50%;
+    }
+    .col-lg-12
+    {
+        width: 100%;
+    }
+    /* Properties Classes Ends */
+    /* Margin Padding Classes Starts */
+    .m-lg-0
+    {
+        margin: 0 0;
+    }
+    /* Margin Padding Classes Ends */
+    
+    /* Introduction Section Starts */
+    .introduction .introduction-heading p
+    {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+    /* Introduction Section Ends */
+    
+    /* Blog Section Starts */
+    .blog .col-6 .categories ul li
+    {
+        line-height: 2;
+    }
+    .blog .col-6 .categories ul li a
+    {
+        font-size: 16px;
+    }
+    /* Blog Section Ends */
+    
+    /* Footer Section Starts */
+    footer .footer-box-4-body .images-line-1
+    {
+        flex-wrap: wrap;
+    }
+    /* Footer Section Ends */
 }
+
 /* M */
 @media screen and (max-width: 991px)
 {
@@ -29,6 +96,56 @@
     {
         max-width: 720px;
     }
+    /* Properties Classes Starts */
+    .col-md-4
+    {
+        width: 33.33%;
+    }
+    .col-md-6
+    {
+        width: 50%;
+    }
+    .col-md-12
+    {
+        width: 100%;
+    }
+    /* Properties Classes Ends */
+
+    /* Classes And Id section Starts */
+    /* Header Section Starts */
+    header .navbar 
+    {
+        position: relative;
+        padding: 0 0;
+        padding: 20px 0;
+    }
+    header .navbar nav
+    {
+        position: absolute;
+        top: 100%;
+        padding-top: 1rem;
+        right: 0;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+    }
+    header .navbar nav ul
+    {
+        flex-direction: column;
+    }
+    
+    header .navbar .toggler
+    {
+        display: block;
+    }
+    /* header Section Ends */
+
+    /* Hero's Section Starts */
+    .hero 
+    {
+        height: 350px;
+    }
+    /* Hero's Section Ends */
+    /* Classes And Id section Ends */
 }
 /* S */
 @media screen and (max-width: 767px)
@@ -37,6 +154,23 @@
     {
         max-width: 540px;
     }
+    /* Properties Classes Starts */
+    .col-sm-4
+    {
+        width: 33.33%;
+    }
+    .col-sm-6
+    {
+        width: 50%;
+    }
+    .col-sm-12
+    {
+        width: 100%;
+    }
+    /* Properties Classes Ends */
+
+    /* Footer Starts */
+    /* Footer End */
 }
 /* XS */
 @media screen and (max-width: 578px)
@@ -45,4 +179,21 @@
     {
         max-width: 100%;
     }
+    /* Properties Classes Starts */
+    .col-xs-6
+    {
+        width: 50%;
+    }
+    .col-xs-12
+    {
+        width: 100%;
+    }
+    /* Properties Classes Ends */
+
+    /* Blog Starts */
+    .blog .col-6 .usefull ul li a
+    {
+        line-height: .8;
+    }
+    /* Blog Ends */
 }
